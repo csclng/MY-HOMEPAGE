@@ -1,0 +1,130 @@
+<html>
+<TITLE>ACTIVITY5 Form</TITLE>
+<head>
+<meta charset="UTF-8">
+	<meta name="viewport"content="width=divice-width,initial scale=1.0">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.2.1/dist/css/bootstrap.min.css" 
+	integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" 
+	crossorigin="anonymous">
+	</head>	
+	<style>
+	h1{
+		color:green;
+		}
+		</style>
+	
+<h1>USING BOOTSTRAP/CSS</h1>
+<div class="container">
+	<div class="container">
+	<div class="row">
+		<div class="col-md-6">
+<fieldset>
+<form action="/action_page.php"></form>
+<table class="table-warning">
+<TR> 
+<TD>Name:</TD> 
+<TD><INPUT TYPE="text" NAME="name" SIZE="25"VALUE="Walaa Broody "></TD> 
+</TR>
+<tr> 
+<TD>Email:</TD> 
+<TD><INPUT TYPE="text" NAME="email" SIZE="25" VALUE="w.broody@widget-sales.com"></TD> 
+</tr>
+<TR> 
+<TD>Address:</TD> 
+<TD><TEXTAREA NAME="textfield3" COLS="27" ROWS="3">162 Main Road
+Rondebosch
+Cape Town
+</TEXTAREA></TD> 
+</TR> 
+<TR> 
+<TD>Postcode:</TD> 
+<TD><INPUT TYPE="text" NAME="postcode" SIZE="20" VALUE="7700"></TD> </TR> 
+</table> 
+</FORM>
+</TABLE><BR><BR>
+<table class="table-warning">
+<TR>
+<TD><B>Product</B></TD>
+<TD><B>Part Number</B></TD>
+<TD><B>Quantity</B></TD>
+<TD><B>Unit Price</B></TD>
+<TD><B>Subtotal</B></TD>
+</TR>
+<TR>
+<TD>EconoBox</TD><TD>LB100</TD>
+<TD><INPUT type="text" name="Qlb100" value="3" size="7"></TD><TD>P5</TD>
+<TD><INPUT type="text" name="Sublb100" size="7" value="P15"></TD>
+</TR>
+<TR>
+<TD>Standard Box</TD><TD>LB200</TD>
+<TD><INPUT type="text" name="Qlb200" value="4" size="7"></TD><TD>P10</TD>
+<TD><INPUT type="text" name="Sublb200" size="7" value="P40"></TD>
+</TR>
+<TR>
+<TD>Premium Box<TD>LB300</TD>
+<TD><INPUT type="text" name="Qlb300" value="1" size="7"></TD><TD>P15</TD>
+<TD><INPUT type="text" name="Sublb300" size="7" value="P15"></TD>
+</TR>
+<TR>
+<TD>Deluxe Box<TD>LB400</TD>
+<TD><INPUT type="text" name="Qlb400" value="0" size="7"></TD><TD>P20</TD>
+<TD><INPUT type="text" name="Sublb400" size="7" value=""></TD>
+</TR>
+<TR>
+<TD>Super Deluxe Box<TD>LB500</TD>
+<TD><INPUT type="text" name="Qlb500" value="1"size="7"></TD><TD>P30</TD>
+<TD><INPUT type="text" name="Sublb500" size="7" value="P30"></TD>
+</TR>
+<TR>
+<TD COLSPAN=5 ALIGN="right">
+Total: <INPUT type="text" name="total" size="7" value="P100"></TD>
+</TR>
+</TABLE><BR><BR>
+<B>Credit Card Details</B><BR>
+<table class="table-warning">
+<TR>
+<TD>Card Type:</TD>
+</TR>
+<TR>
+<TD><INPUT type="radio" name="cardmake" value="master" checked>Mastercard</TD>
+<TD>Card Number:</TD>
+<TD><INPUT type="text" name="cardnumber" value="45645" size="12"></TD>
+</TR>
+ 
+<TR>
+<TD><INPUT type="radio" name="cardmake" value="visa">Visa</TD>
+<TD>Expiry date:</TD>
+<TD><INPUT type="text" name="expiry date" size="8" maxlength="5" value="03/99"></TD>
+</TR>
+ 
+<TR>
+<TD><INPUT type="radio" name="cardmake" value="amex">American Express</TD>
+</TR>
+ 
+<TR>
+<TD><INPUT type="radio" name="cardmake" value="diners">Diners Club</TD>
+</TR>
+</TABLE><BR><BR>
+<table class="table-warning">
+<TR>
+<TD ALIGN="center"><B>Delivery Address:</center></B></TD>
+<TD><TEXTAREA NAME="delivery" COLS="20" ROWS="3">162 Main Road
+Rondebosch
+Cape Town
+</TEXTAREA></TD>
+</TR>
+</TABLE><BR><BR>
+<button type="button" class="btn btn-danger">SEND ORDER</button>
+<button type="button" class="btn btn-info">CLEAR FORM</button>
+</div>
+</div>
+</div>
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.6/dist/umd/popper.min.js" 
+	integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" 
+	crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.2.1/dist/js/bootstrap.min.js" 
+	integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" 
+	crossorigin="anonymous"></script>
+</body>
+</html>

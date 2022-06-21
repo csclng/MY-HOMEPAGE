@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<head>
+	<title>Check PALINDROME or NOT</title>
+</head>
+<fieldset>
+<script type="text/javascript" >
+	function palindrome(str)
+	{
+		var re = /[^A-Za-z0-9]/g;
+		str = str.toLowerCase().replace(re, '');
+		var len = str.length;
+		for (var i = 0; i < len/2; i++)
+		{
+			if (str[i] !== str[len - 1 - i])
+			{
+				return "THIS IS NOT A PALINDROME";
+			}
+		}
+		return "THIS IS PALINDROME";
+	};
+	
+	function Answer()
+	{ 
+		let str = document.getElementById("String").value;
+		let ans = palindrome(str);
+		document.getElementById("Answer").innerHTML = ans;
+	};
+</script>
+<style>
+	html{
+		background-color:powderblue;
+	}
+	h1{
+	font-family: verdana;
+	color:brown;
+	}
+	p{
+	color:green;
+	text-align:center;
+	}
+	
+</style>
+<body>
+<h1><center>We can determine whether the word is PALINDROME or NOT</center></h1>
+	
+<fieldset>
+	<p><label for="Name">&emsp;Please enter a word to check:</label></p>
+	<p><input type="text" id="String" name="String"><br><br></p>
+	<p><label for="Answer1">To view the result click the checker button:</label></p>
+	<p id = "Answer"></p><br><br>
+	<p><input type = "button"
+	value = "Check"
+	onClick = "javascript:Answer()"></p>
+</fieldset>
+</fieldset>
+</body>
+</head>

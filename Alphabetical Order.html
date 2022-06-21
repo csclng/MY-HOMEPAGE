@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<title>Alphabetical Order</title>
+<body>
+<fieldset>
+<style>
+html{
+	background-color:powderblue;
+}
+h1{
+font-family: verdana;
+color:brown;
+}
+p{
+color:green;
+}
+</style>
+<h1>Alphabetical Order</h1>
+<p>Click the button below to sort the letters</p>
+<button onclick="sortList()">SORT</button>
+<ul id="bloom">
+  <li>i</li>
+  <li>l</li>
+  <li>o</li>
+  <li>v</li>
+  <li>e</li>
+  <li>t</li>
+  <li>u</li>
+  <li>l</li>
+  <li>i</li>
+  <li>p</li>
+  <li>s</li>
+  
+</ul>
+<script>
+function sortList() {
+  var list, i, switching, b, shouldSwitch;
+  list = document.getElementById("bloom");
+  switching = true;
+  
+  while (switching) {
+    // Start by saying: no switching is done:
+    switching = false;
+    b = list.getElementsByTagName("LI");
+    // Loop through all list items:
+    for (i = 0; i < (b.length - 1); i++) {
+      // Start by saying there should be no switching:
+      shouldSwitch = false;
+      
+      if (b[i].innerHTML.toLowerCase() > b[i + 1].innerHTML.toLowerCase()) {
+        
+        shouldSwitch = true;
+        break;
+      }
+    }
+    if (shouldSwitch) {
+      
+      b[i].parentNode.insertBefore(b[i + 1], b[i]);
+      switching = true;
+    }
+  }
+}
+</script>
+</body>
+</html>
